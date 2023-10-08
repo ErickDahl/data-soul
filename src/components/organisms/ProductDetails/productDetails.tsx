@@ -7,17 +7,17 @@ import AddToCartIcon from "../../../assets/svgs/ShoppingCartSimple.svg";
 import styles from "./productDetails.module.scss";
 
 type ProductDetailsProps = {
-  productTitle: string;
+  productName: string;
   productPrice: number;
 };
 
 const ProductDetails = ({
-  productTitle,
+  productName,
   productPrice,
 }: ProductDetailsProps) => {
   return (
     <div className={styles.productDetails}>
-      <h1 className={styles.productTitle}>{productTitle}</h1>
+      <h1 className={styles.productName}>{productName}</h1>
       <ProductReview starsNumber={4} reviewsNumber={10} />
       <div className={styles.priceContainer}>
         <PriceRender isListPrice value={productPrice + productPrice * 0.2} />

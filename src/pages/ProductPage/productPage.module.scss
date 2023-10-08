@@ -1,7 +1,22 @@
 @import "../../styles/variables.scss";
 
-.productPage {
+.productPageContainer {
+  margin-top: 32px;
+}
+
+.product {
   @include flex(space-evenly);
   width: 100%;
-  margin-top: 32px;
+}
+
+.recommendedProductsTitle {
+  color: #231f20;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: $font-lora;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  margin: 80px 0 32px 0;
+  text-align: center;
 }

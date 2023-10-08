@@ -10,7 +10,7 @@ type ResponsiveImgProps = {
 const ResponsiveImg = ({
   src,
   maxWidth,
-  alt = "logo img",
+  alt = "img",
   className = styles.defaultImgClass,
 }: ResponsiveImgProps) => {
   const imgStyle = {

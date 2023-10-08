@@ -1,0 +1,21 @@
+@import "../../../styles/variables.scss";
+
+.productShelf {
+  @include centered-flex();
+  flex-direction: column;
+}
+
+.productName {
+  color: #505050;
+  font-family: $font-lora;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  margin: 16px 0;
+}
+
+.priceContainer {
+  @include flex(center, baseline);
+  gap: 10px;
+}

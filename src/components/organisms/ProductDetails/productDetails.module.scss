@@ -1,0 +1,47 @@
+@import "../../../styles/variables.scss";
+
+.productDetails {
+  @include flex(center, flex-start);
+  flex-direction: column;
+  max-width: 496px;
+}
+
+.productTitle {
+  color: #505050;
+  font-family: $font-lora;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  margin: 0;
+  margin-bottom: 48px;
+}
+
+.priceContainer {
+  @include flex(center, baseline);
+  margin: 32px 0;
+  gap: 10px;
+}
+
+.buyButton {
+  @include centered-flex();
+  max-height: 56px;
+  padding: 16px 24px;
+  background-color: #231f20;
+  border-radius: 2px;
+  gap: 10px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 32px;
+
+  span {
+    color: #ffffff;
+    text-align: center;
+    font-feature-settings: "clig" off, "liga" off;
+    font-family: $font-montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+  }
+}

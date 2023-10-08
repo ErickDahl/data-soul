@@ -1,0 +1,27 @@
+@import "../../../styles/variables.scss";
+
+.reviewContainer {
+  @include centered-flex();
+  gap: 4px;
+}
+
+.starsContainer {
+  @include centered-flex();
+}
+
+.reviewsNumberText,
+.starsNumberText {
+  color: #9a9a9a;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.starsNumberText {
+  font-family: $font-roboto;
+}
+
+.reviewsNumberText {
+  font-family: $font-helvica;
+}

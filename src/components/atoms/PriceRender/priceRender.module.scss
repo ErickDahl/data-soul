@@ -1,0 +1,23 @@
+@import "../../../styles/variables.scss";
+
+.price {
+  color: #505050;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: $font-montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+.listPrice {
+  color: #9a9a9a;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: $font-montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  text-decoration-line: line-through;
+
+}

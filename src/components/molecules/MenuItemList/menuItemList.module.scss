@@ -1,0 +1,19 @@
+@import "../../../styles/variables.scss";
+
+.menuList {
+  @include centered-flex();
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  gap: 16px;
+}
+
+.menuItem {
+  color: #444041;
+  font-family: $font-inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
+}

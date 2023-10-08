@@ -1,0 +1,19 @@
+@import "../../../styles/variables.scss";
+
+.button {
+  @include centered-flex();
+  gap: 16px;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.textClassName {
+  color: #231f20;
+  font-family: $font-inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}

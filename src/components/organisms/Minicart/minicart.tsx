@@ -12,8 +12,6 @@ const Minicart = () => {
     useMinicartContext();
   const isMinicartEmpty = minicartItems.length === 0;
 
-  console.log(minicartItems);
-
   return (
     <SideBar position="right" overlay isOpen={isOpen} onClose={ToggleMinicart}>
       {isMinicartEmpty ? (

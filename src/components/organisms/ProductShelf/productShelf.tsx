@@ -10,8 +10,23 @@ type ProductShelfProps = {
 };
 
 const ProductShelf = ({ products }: ProductShelfProps) => {
+  const breakpoints = {
+    320: {
+      slidesPerView: 2,
+      spaceBetween: 10,
+    },
+    981: {
+      slidesPerView: 4,
+      spaceBetween: 10,
+    },
+  };
+
   return (
-    <Swiper className={styles.productShelf} spaceBetween={10} slidesPerView={4}>
+    <Swiper
+      className={styles.productShelf}
+      loop={true}
+      breakpoints={breakpoints}
+    >
       {products.map((product) => (
         <SwiperSlide key={uuidv4()}>
           <ProductItemShelf {...product} />

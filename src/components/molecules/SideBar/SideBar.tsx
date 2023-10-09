@@ -2,11 +2,12 @@ import { ReactNode } from "react";
 import { Button } from "../Button/button";
 import IconClose from "../../../assets/svgs/icon-close.svg";
 import styles from "./SideBar.module.scss";
+import { useIsMobile } from "../../../utils/isMobile";
 
 type SideBarProps = {
   children: ReactNode;
   isOpen: boolean;
-  position?: "left" | "right";
+  position?: "left" | "right"; // Keep the position prop
   onClose: () => void;
   overlay?: boolean;
 };
@@ -14,23 +15,22 @@ type SideBarProps = {
 const SideBar = ({
   children,
   isOpen,
-  position = "right",
+  position = "right", // Default to "right" position
   overlay = false,
   onClose = () => {},
 }: SideBarProps) => {
-  const initialStyle =
-    position === "left" ? { left: "-50%" } : { right: "-50%" };
+  const isMobile = useIsMobile();
 
-  const iconStyle = position === "left" ? { left: "102%" } : { right: "9%" };
+  // Calculate the icon position based on both position and isMobile
+  let iconStyle = {};
 
-  let sidebarStyle;
-
-  if (isOpen) {
-    sidebarStyle = position === "left" ? { left: 0 } : { right: 0 };
-  } else {
-    sidebarStyle = initialStyle;
+  if (position === "right") {
+    iconStyle = isMobile ? { right: "6%" } : { right: "9%" };
+  } else if (position === "left") {
+    iconStyle = isMobile ? { left: "101%" } : { left: "102%" };
   }
 
+  const sidebarStyle = isOpen ? { [position]: 0 } : { [position]: "-100%" };
   const overlayStyle = isOpen ? { display: "block" } : { display: "none" };
 
   return (

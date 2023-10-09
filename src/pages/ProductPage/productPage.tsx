@@ -20,7 +20,11 @@ const ProductPage = () => {
   return (
     <div className={styles.productPageContainer}>
       <div className={styles.product}>
-        <ResponsiveImg src={displayProduct.image} maxWidth="358px" />
+        <ResponsiveImg
+          className={styles.productImage}
+          src={displayProduct.image}
+          maxWidth="358px"
+        />
         <ProductDetails {...displayProduct} />
       </div>
 

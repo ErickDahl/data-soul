@@ -1,0 +1,10 @@
+@import "../../../styles/variables.scss";
+
+.menuListDrawer {
+  @include centered-flex();
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  gap: 16px;
+}

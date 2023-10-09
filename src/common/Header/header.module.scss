@@ -5,6 +5,11 @@
   @include flex(space-evenly);
   height: 40px;
   padding: 40px 0;
+
+  @include mq(lg, max) {
+    justify-content: space-between;
+    padding: 24px;
+  }
 }
 
 .minicartButton {

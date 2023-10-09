@@ -7,6 +7,16 @@
 .product {
   @include flex(space-evenly);
   width: 100%;
+
+  @include mq(lg, max) {
+    flex-direction: column;
+  }
+}
+
+.productImage {
+  @include mq(lg, max) {
+    margin-bottom: 48px;
+  }
 }
 
 .recommendedProductsTitle {

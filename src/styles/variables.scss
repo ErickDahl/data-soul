@@ -15,8 +15,46 @@
   align-items: ($align-items);
 }
 
+@mixin mq($width, $type: min) {
+  @if map_has_key($grid-breakpoints, $width) {
+    $width: map_get($grid-breakpoints, $width);
+    @if $type == max {
+      $width: $width - 1px;
+    }
+    @media only screen and (#{$type}-width: $width) {
+      @content;
+    }
+  }
+}
+
+@mixin mq_range($min, $max) {
+  @if (
+    map_has_key($grid-breakpoints, $min) and
+      map_has_key($grid-breakpoints, $max)
+  ) {
+    $width_max: map_get($grid-breakpoints, $max);
+    $width_min: map_get($grid-breakpoints, $min);
+    $width_max: $width_max - 1px;
+    @media only screen and (min-width: $width_min) and (max-width: $width_max) {
+      @content;
+    }
+  }
+}
+
 $font-inter: Inter, sans-serif;
 $font-montserrat: Montserrat, sans-serif;
 $font-roboto: Roboto, sans-serif;
 $font-helvica: Helvetica, sans-serif;
 $font-lora: Lora, sans-serif;
+
+$grid-breakpoints: (
+  xs: 0,
+  lc: 350,
+  sl: 340,
+  cstm: 400,
+  sm: 576px,
+  md: 767px,
+  lg: 980px,
+  xl: 1170px,
+  xx: 1400px,
+) !default;

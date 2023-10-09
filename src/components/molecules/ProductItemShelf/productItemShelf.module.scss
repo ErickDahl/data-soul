@@ -5,7 +5,19 @@
   flex-wrap: wrap;
   flex-direction: column;
   text-decoration: none;
-  height: 337px;
+  height: 370px;
+
+  @include mq(xl, min) {
+    height: 490px;
+  }
+
+  // @include mq(sm, max){
+  //   height: 360px;
+  // }
+
+  @include mq_range(sm, lg) {
+    height: 493px;
+  }
 }
 
 .productName {
@@ -27,6 +39,11 @@
 .priceContainer {
   @include flex(center, baseline);
   gap: 10px;
+
+  @include mq(md, max) {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .productImageWrapper {

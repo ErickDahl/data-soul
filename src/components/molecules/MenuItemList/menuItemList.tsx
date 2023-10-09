@@ -1,12 +1,10 @@
 import { Link } from "../../atoms/Link/link";
 import { v4 as uuidv4 } from "uuid";
+import { HeaderMenuItem } from "../../../common/Header/header";
 import styles from "./menuItemList.module.scss";
 
 type MenuItemListProps = {
-  items: {
-    href: string;
-    textContent: string;
-  }[];
+  items: HeaderMenuItem[];
   className?: string;
 };
 

@@ -3,7 +3,13 @@
 .productDetails {
   @include flex(center, flex-start);
   flex-direction: column;
+  width: 100%;
   max-width: 496px;
+
+  @include mq(lg, max) {
+    max-width: 90%;
+    margin: 0 auto;
+  }
 }
 
 .productName {
@@ -33,6 +39,7 @@
   border: none;
   cursor: pointer;
   margin-bottom: 32px;
+  transition: background-color 0.3s;
 
   span {
     color: #ffffff;
@@ -43,5 +50,13 @@
     font-style: normal;
     font-weight: 400;
     line-height: 16px;
+  }
+
+  @include mq(lg, max) {
+    width: 100%;
+  }
+
+  &:hover {
+    background-color: #444041;
   }
 }

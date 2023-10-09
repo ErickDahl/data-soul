@@ -1,16 +1,24 @@
 import styles from "./link.module.scss";
+import { Link as RouterLink } from "react-router-dom";
 
 type LinkProps = {
   href: string;
-  textContent: string;
+  textContent?: string;
   className?: string;
+  children?: React.ReactNode;
 };
 
-const Link = ({ href, textContent, className = styles.link }: LinkProps) => {
+const Link = ({
+  href,
+  textContent = "",
+  className = styles.link,
+  children,
+}: LinkProps) => {
   return (
-    <a className={className} href={href}>
-      {textContent}
-    </a>
+    <RouterLink className={className} to={href}>
+      {textContent !== "" && textContent}
+      {children}
+    </RouterLink>
   );
 };
 

@@ -1,0 +1,33 @@
+@import "../../../../styles/variables.scss";
+
+.container {
+  @include centered-flex();
+  flex-direction: column;
+  height: 100%;
+  gap: 16px;
+}
+
+.title {
+  color: #231f20;
+  text-align: center;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: $font-montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 30px */
+}
+
+.button {
+  @include centered-flex();
+  max-height: 56px;
+  padding: 16px 24px;
+  background-color: #231f20;
+  border-radius: 2px;
+  border: none;
+  cursor: pointer;
+
+  span {
+    color: #ffffff;
+  }
+}

@@ -11,7 +11,9 @@ type ProductReviewProps = {
 
 const ProductReview = ({ starsNumber, reviewsNumber }: ProductReviewProps) => {
   const maxStars = 5;
-  const limitedStarsNumber = Math.min(Math.max(starsNumber, 0), maxStars); 
+  const limitedStarsNumber = Math.round(
+    Math.min(Math.max(starsNumber, 0), maxStars)
+  );
   const emptyStarsNumber = maxStars - limitedStarsNumber;
 
   return (

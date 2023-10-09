@@ -1,0 +1,6 @@
+@import '../../../styles/variables.scss';
+
+.stepperContainer{
+    @include centered-flex();
+    gap: 8px;
+}

@@ -1,0 +1,91 @@
+@import "../../../styles/variables.scss";
+
+.minicartTitle {
+  color: #231f20;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: $font-montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+}
+
+.minicartItemsContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+  max-height: 415px;
+  overflow-y: auto;
+  margin-top: 16px;
+  padding-bottom: 10px;
+}
+
+.minicartFooter {
+  @include flex(flex-end, flex-start);
+  flex-direction: column;
+  height: 40%;
+}
+
+.line {
+  height: 1px;
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.totalPrice {
+  @include flex(space-between);
+  width: 90%;
+  margin: 16px auto;
+}
+
+.totalPriceTitle {
+  color: #231f20;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: $font-montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 21px; /* 131.25% */
+}
+
+.totalPriceValue {
+  color: #231f20;
+  text-align: right;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: $font-montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 21px; /* 131.25% */
+}
+
+.checkoutButton {
+  @include centered-flex();
+  width: 100%;
+  max-height: 56px;
+  padding: 16px 24px;
+  background-color: #231f20;
+  border-radius: 2px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 24px;
+
+  span {
+    color: #ffffff;
+  }
+}
+
+.keepBuying {
+  @include centered-flex();
+  width: 100%;
+  max-height: 56px;
+  background-color: transparent;
+  border-radius: 2px;
+  border: none;
+  cursor: pointer;
+
+  span {
+    color: #231f20;
+  }
+}

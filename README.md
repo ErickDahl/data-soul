@@ -1,6 +1,6 @@
 # Projeto de Página de Produto utilizando Vite, React e TypeScript
 
-Bem-vindo ao repositório do projeto de Página Home desenvolvido usando Vite, React e TypeScript! Este projeto foi criado como parte de um teste, com o objetivo de implementar uma página de produto.
+Bem-vindo ao repositório do projeto de Página de produto desenvolvido usando Vite, React e TypeScript! Este projeto foi criado como parte de um teste, com o objetivo de implementar uma página de produto.
 
 ## Descrição do Projeto
 
@@ -10,7 +10,9 @@ O objetivo deste projeto é construir a página de produto de acordo com o layou
 
 Neste projeto, a página de produto possui as seguintes funcionalidades:
 
-- **Exibição de Conteúdo:** A página exibe informações relevantes, como títulos, texto descritivo e imagens, de acordo com o layout fornecido, adicionar produtos a um carrinho, remover e editar a quantidade.
+- **Exibição de Conteúdo:** A página exibe informações relevantes, como títulos, texto descritivo e imagens.
+  
+- **Minicart:**  Adicionar produtos a um carrinho, remover e editar a quantidade.
 
 ## Tecnologias Utilizadas
 

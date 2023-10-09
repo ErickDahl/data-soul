@@ -1,4 +1,3 @@
-import React from "react";
 import { SideBar } from "../../molecules/SideBar/SideBar";
 import { useMinicartContext } from "../../../context/minicarContext";
 import { MinicartItem } from "../../molecules/MinicartItem/minicartItem";

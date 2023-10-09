@@ -1,4 +1,4 @@
-# Projeto de Página Home utilizando Vite, React e TypeScript
+# Projeto de Página de Produto utilizando Vite, React e TypeScript
 
 Bem-vindo ao repositório do projeto de Página Home desenvolvido usando Vite, React e TypeScript! Este projeto foi criado como parte de um teste, com o objetivo de implementar uma página de produto.
 

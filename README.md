@@ -1,25 +1,42 @@
-# Teste Prático para Desenvolvedores Front End VTEX
+# Projeto de Página Home utilizando Vite, React e TypeScript
 
-## Objetivo do Desafio:
+Bem-vindo ao repositório do projeto de Página Home desenvolvido usando Vite, React e TypeScript! Este projeto foi criado como parte de um teste, com o objetivo de implementar uma página de produto.
 
-Desenvolver uma Página de Detalhes do Produto (PDP) utilizando a API https://fakestoreapi.com. A PDP deve ser acessível através de uma rota dinâmica baseada no ID do produto (e.g., /produto/{id}). Na PDP, os produtos devem ser adequadamente renderizados e, ao interagir com o botão "Adicionar ao Carrinho", um minicart deve ser acionado exibindo o produto selecionado. Dentro do minicart, deve ser possível:
+## Descrição do Projeto
 
-- Adicionar e manter os produtos;
-- Modificar a quantidade de cada item;
-- Excluir produtos.
+O objetivo deste projeto é construir a página de produto de acordo com o layout fornecido.
 
-## Design:
-Referência visual disponível no Figma: [Figma](https://www.figma.com/proto/OixBZcYeOxGcIJp1q9G1rM/Test---Front-End-Developer?type=design&node-id=1136-14890&t=6EINAr6UuuMntiZk-0&scaling=min-zoom&page-id=1%3A9&starting-point-node-id=1136%3A14890&show-proto-sidebar=1)
+## Funcionalidades
 
-## Stack Tecnológica:
-ReactJS
+Neste projeto, a página de produto possui as seguintes funcionalidades:
 
-## Critérios de Avaliação:
-- Clean Code: O código deve seguir padrões de qualidade, sendo organizado, legível e mantendo consistência.
-- Componentização: Avaliação da modularização e reusabilidade dos componentes.
-- Gestão de Erros: Robustez no tratamento e feedback de erros oriundos da API ou interações do usuário.
-- Responsividade: A solução deve ser otimizada para dispositivos de diversos tamanhos, garantindo uma experiência fluida.
-- Performance: Otimizações para garantir um carregamento eficiente e responsivo da aplicação.
-- Documentação: README detalhado sobre o processo de instalação, execução e testes da aplicação.
-- Roteamento Dinâmico: Implementação eficaz de rotas dinâmicas utilizando o ID do produto como parâmetro.
-- Interação com o Minicart: Implementação das funcionalidades de adição, remoção e alteração de produtos no minicart.
+- **Exibição de Conteúdo:** A página exibe informações relevantes, como títulos, texto descritivo e imagens, de acordo com o layout fornecido, adicionar produtos a um carrinho, remover e editar a quantidade.
+
+## Tecnologias Utilizadas
+
+- **Vite:** Vite é um build tool (ferramenta de construção) rápida e moderna que permite desenvolver aplicativos web com velocidade e eficiência.
+
+- **React:** React é uma biblioteca JavaScript para a construção de interfaces de usuário interativas e componentes reutilizáveis.
+
+- **TypeScript:** TypeScript é um superconjunto de JavaScript que adiciona tipos estáticos à linguagem, ajudando a evitar erros e melhorando a manutenção do código.
+
+## Instruções de Uso
+
+Siga as etapas abaixo para executar o projeto em sua máquina local:
+
+1. **Clone o repositório:** Utilize o comando abaixo para clonar este repositório em sua máquina:
+
+   ```bash
+   git clone https://github.com/seu-usuario/nome-do-repositorio.git
+   ```
+
+2. **Instale as dependências:** Execute o seguinte comando para instalar as dependências do projeto:
+
+   ```bash
+   yarn 
+   ```
+
+3. **Execute o projeto:** Utilize o comando abaixo para iniciar o servidor de desenvolvimento e visualizar a página em seu navegador:
+   ```bash
+   yarn vite
+   ```
